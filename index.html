@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrickCraft - Build Your Imagination</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top brick-pattern">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-cubes me-2"></i><span class="brand-text">BRICKCRAFT</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item ms-2 d-none d-lg-block">
+                        <a class="btn btn-warning btn-sm" href="products.html">
+                            <i class="fas fa-shopping-cart me-1"></i> Shop Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container text-center py-5">
+            <div class="hero-content">
+                <h1 class="display-3 fw-bold text-white hero-title">BUILD YOUR IMAGINATION</h1>
+                <p class="lead text-white hero-subtitle">Creative building blocks for all ages</p>
+                <div class="hero-buttons mt-4">
+                    <a href="products.html" class="btn btn-warning btn-lg me-2">
+                        <i class="fas fa-box-open me-2"></i>Explore Sets
+                    </a>
+                    <a href="about.html" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-info-circle me-2"></i>Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bricks"></div>
+    </header>
+
+    <!-- Featured Sets Section -->
+    <section class="py-5 position-relative overflow-hidden">
+        <div class="container position-relative">
+            <div class="section-header mb-5 text-center">
+                <h2 class="minifigure-heading">FEATURED SETS</h2>
+                <p class="text-muted">Our most popular building experiences</p>
+                <div class="brick-divider"></div>
+            </div>
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-4">
+                    <div class="card product-card h-100">
+                        <span class="badge bg-danger position-absolute top-0 end-0 m-2">BESTSELLER</span>
+                        <img src="images/space-explorer.png" class="card-img-top product-img" alt="Space Explorer">
+                        <div class="card-body">
+                            <h5 class="card-title">Space Explorer</h5>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">650 pcs</span>
+                                <span class="badge bg-success">Age 8+</span>
+                            </div>
+                            <p class="card-text">$49.99</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <span class="ms-1">4.5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-success w-100 add-to-cart" data-id="1">
+                                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="col-md-4">
+                    <div class="card product-card h-100">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2">NEW</span>
+                        <img src="images/medieval-castle.jpg" class="card-img-top product-img" alt="Medieval Castle">
+                        <div class="card-body">
+                            <h5 class="card-title">Medieval Castle</h5>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">1200 pcs</span>
+                                <span class="badge bg-success">Age 10+</span>
+                            </div>
+                            <p class="card-text">$89.99</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                    <span class="ms-1">4.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-success w-100 add-to-cart" data-id="2">
+                                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="col-md-4">
+                    <div class="card product-card h-100">
+                        <img src="images/ocean-explore.jpg" class="card-img-top product-img" alt="Ocean Explorer">
+                        <div class="card-body">
+                            <h5 class="card-title">Ocean Explorer</h5>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">450 pcs</span>
+                                <span class="badge bg-success">Age 7+</span>
+                            </div>
+                            <p class="card-text">$39.99</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span class="ms-1">5.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-success w-100 add-to-cart" data-id="3">
+                                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="products.html" class="btn btn-warning btn-lg">
+                    <i class="fas fa-chevron-circle-right me-2"></i>View All Products
+                </a>
+            </div>
+        </div>
+        <div class="brick-corner brick-corner-bottom"></div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-5 bg-light brick-pattern-light">
+        <div class="container">
+            <div class="section-header mb-5 text-center">
+                <h2 class="minifigure-heading">WHY CHOOSE BRICKCRAFT?</h2>
+                <p class="text-muted">What makes our building sets special</p>
+                <div class="brick-divider brick-divider-dark"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-star fa-3x text-warning"></i>
+                        </div>
+                        <h3>Premium Quality</h3>
+                        <p>Our bricks are made from high-quality, durable materials that click together perfectly every time.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-graduation-cap fa-3x text-primary"></i>
+                        </div>
+                        <h3>Educational Value</h3>
+                        <p>Designed to develop STEM skills, creativity, and problem-solving abilities in builders of all ages.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-leaf fa-3x text-success"></i>
+                        </div>
+                        <h3>Eco-Friendly</h3>
+                        <p>Made from sustainable materials that are safe for children and better for the environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-header mb-5 text-center">
+                <h2 class="minifigure-heading">WHAT BUILDERS SAY</h2>
+                <p class="text-muted">Hear from our happy customers</p>
+                <div class="brick-divider"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="testimonial-card p-4 h-100">
+                                <div class="d-flex mb-3">
+                                    <div>
+                                        <h5 class="mb-0">Sarah Johnson</h5>
+                                        <div class="rating small">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>"My kids absolutely love the Space Explorer set! The pieces fit together perfectly and the instructions were easy to follow. We'll definitely be buying more BrickCraft sets."</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="testimonial-card p-4 h-100">
+                                <div class="d-flex mb-3">
+                                    <div>
+                                        <h5 class="mb-0">Michael Chen</h5>
+                                        <div class="rating small">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star-half-alt text-warning"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>"I'm impressed with BrickCraft's quality and attention to detail. The Medieval Castle is now the centerpiece of my collection!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">READY TO START BUILDING?</h2>
+            <p class="lead mb-5">Join thousands of happy builders and unleash your creativity today</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="products.html" class="btn btn-light btn-lg px-4">
+                    <i class="fas fa-shopping-cart me-2"></i>Shop Now
+                </a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg px-4">
+                    <i class="fas fa-question-circle me-2"></i>Ask a Question
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 brick-pattern-dark">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">
+                        <i class="fas fa-cubes me-2"></i>BRICKCRAFT
+                    </h4>
+                    <p>Building creativity one brick at a time since 2023.</p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-uppercase mb-4">Shop</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="products.html" class="text-white">All Products</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">New Arrivals</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Best Sellers</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Sale Items</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-uppercase mb-4">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">FAQs</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Shipping</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-uppercase mb-4">Newsletter</h5>
+                    <p>Subscribe for exclusive offers and building ideas</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-warning" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <small class="text-muted">We'll never share your email with anyone else.</small>
+                </div>
+            </div>
+            <hr class="mt-5">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 BrickCraft. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Your custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

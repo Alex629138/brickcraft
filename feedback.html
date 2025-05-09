@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - BrickCraft</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top brick-pattern">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-cubes me-2"></i><span class="brand-text">BRICKCRAFT</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item ms-2 d-none d-lg-block">
+                        <a class="btn btn-warning btn-sm" href="products.html">
+                            <i class="fas fa-shopping-cart me-1"></i> Shop Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Feedback Hero -->
+    <header class="feedback-hero py-5">
+        <div class="container text-center text-white">
+            <h1 class="display-3 fw-bold hero-title">SHARE YOUR THOUGHTS</h1>
+            <p class="lead">We value your feedback</p>
+        </div>
+        <div class="hero-bricks"></div>
+    </header>
+
+    <!-- Feedback Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-header mb-5 text-center">
+                        <h2 class="minifigure-heading">FEEDBACK FORM</h2>
+                        <p class="text-muted">Let us know how we can improve</p>
+                        <div class="brick-divider"></div>
+                    </div>
+                    
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4 p-md-5">
+                            <form id="feedbackForm">
+                                <!-- Personal Information -->
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3 mb-md-0">
+                                        <label for="name" class="form-label">Your Name *</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                
+                                <!-- Feedback Type -->
+                                <div class="mb-4">
+                                    <label class="form-label">Feedback Type *</label>
+                                    <div class="d-flex flex-wrap gap-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="feedbackType" id="suggestion" value="suggestion" checked>
+                                            <label class="form-check-label" for="suggestion">
+                                                <i class="fas fa-lightbulb me-2 text-warning"></i>Suggestion
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="feedbackType" id="complaint" value="complaint">
+                                            <label class="form-check-label" for="complaint">
+                                                <i class="fas fa-exclamation-circle me-2 text-danger"></i>Complaint
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="feedbackType" id="praise" value="praise">
+                                            <label class="form-check-label" for="praise">
+                                                <i class="fas fa-heart me-2 text-success"></i>Praise
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="feedbackType" id="question" value="question">
+                                            <label class="form-check-label" for="question">
+                                                <i class="fas fa-question-circle me-2 text-primary"></i>Question
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Product Selection -->
+                                <div class="mb-4">
+                                    <label for="product" class="form-label">Related Product (if any)</label>
+                                    <select class="form-select" id="product">
+                                        <option value="" selected>Select a product</option>
+                                        <option>Space Explorer</option>
+                                        <option>Medieval Castle</option>
+                                        <option>Ocean Explorer</option>
+                                        <option>Race Car</option>
+                                        <option>Dinosaur</option>
+                                        <option>Fire Station</option>
+                                        <option>Pirate Ship</option>
+                                        <option>Robot</option>
+                                        <option>Other/General</option>
+                                    </select>
+                                </div>
+                                
+                                <!-- Feedback Content -->
+                                <div class="mb-4">
+                                    <label for="message" class="form-label">Your Feedback *</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                
+                                <!-- Rating -->
+                                <div class="mb-4">
+                                    <label class="form-label">Rating (optional)</label>
+                                    <div class="rating-input">
+                                        <input type="radio" id="star5" name="rating" value="5">
+                                        <label for="star5" title="5 stars"><i class="fas fa-star"></i></label>
+                                        <input type="radio" id="star4" name="rating" value="4">
+                                        <label for="star4" title="4 stars"><i class="fas fa-star"></i></label>
+                                        <input type="radio" id="star3" name="rating" value="3">
+                                        <label for="star3" title="3 stars"><i class="fas fa-star"></i></label>
+                                        <input type="radio" id="star2" name="rating" value="2">
+                                        <label for="star2" title="2 stars"><i class="fas fa-star"></i></label>
+                                        <input type="radio" id="star1" name="rating" value="1">
+                                        <label for="star1" title="1 star"><i class="fas fa-star"></i></label>
+                                    </div>
+                                </div>
+                                
+                                <!-- Follow-up -->
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="followup">
+                                        <label class="form-check-label" for="followup">
+                                            I'd like to receive follow-up about my feedback
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <!-- Submit Button -->
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-dark btn-lg px-5">
+                                        <i class="fas fa-paper-plane me-2"></i>Submit Feedback
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-5">
+                        <p>Need immediate assistance? <a href="contact.html">Contact our support team</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 brick-pattern-dark">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">
+                        <i class="fas fa-cubes me-2"></i>BRICKCRAFT
+                    </h4>
+                    <p>Building creativity one brick at a time since 2023.</p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-uppercase mb-4">Shop</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="products.html" class="text-white">All Products</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">New Arrivals</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Best Sellers</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Sale Items</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-uppercase mb-4">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li class="mb-2"><a href="feedback.html" class="text-white">Feedback</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">FAQs</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-uppercase mb-4">Newsletter</h5>
+                    <p>Subscribe for exclusive offers and building ideas</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-warning" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <small class="text-muted">We'll never share your email with anyone else.</small>
+                </div>
+            </div>
+            <hr class="mt-5">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 BrickCraft. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Your custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

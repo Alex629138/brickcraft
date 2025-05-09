@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - BrickCraft</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top brick-pattern">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-cubes me-2"></i><span class="brand-text">BRICKCRAFT</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+                    <li class="nav-item ms-2 d-none d-lg-block">
+                        <a class="btn btn-warning btn-sm" href="#">
+                            <i class="fas fa-shopping-cart me-1"></i> Cart (3)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Hero -->
+    <header class="products-hero py-5">
+        <div class="container text-center text-white">
+            <h1 class="display-3 fw-bold hero-title">BUILDING SETS</h1>
+            <p class="lead">Explore our collection of creative building blocks</p>
+        </div>
+        <div class="hero-bricks"></div>
+    </header>
+
+    <!-- Products Filter -->
+    <section class="py-4 bg-light brick-pattern-light">
+        <div class="container">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-3">
+                    <label for="categoryFilter" class="form-label">Category</label>
+                    <select class="form-select" id="categoryFilter">
+                        <option selected>All Categories</option>
+                        <option>Space</option>
+                        <option>Castle</option>
+                        <option>City</option>
+                        <option>Adventure</option>
+                        <option>Vehicles</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="ageFilter" class="form-label">Age Group</label>
+                    <select class="form-select" id="ageFilter">
+                        <option selected>All Ages</option>
+                        <option>4+</option>
+                        <option>6+</option>
+                        <option>8+</option>
+                        <option>10+</option>
+                        <option>12+</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="priceFilter" class="form-label">Price Range</label>
+                    <select class="form-select" id="priceFilter">
+                        <option selected>All Prices</option>
+                        <option>Under $25</option>
+                        <option>$25 - $50</option>
+                        <option>$50 - $100</option>
+                        <option>Over $100</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="sortBy" class="form-label">Sort By</label>
+                    <div class="input-group">
+                        <select class="form-select" id="sortBy">
+                            <option selected>Featured</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest</option>
+                            <option>Best Selling</option>
+                        </select>
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-filter"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-5 position-relative">
+        <div class="container">
+            <div class="section-header mb-5">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                    <h2 class="minifigure-heading mb-3 mb-md-0">ALL PRODUCTS</h2>
+                    <div class="d-flex align-items-center">
+                        <span class="me-2">View:</span>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-outline-primary active">
+                                <i class="fas fa-th"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-primary">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="brick-divider"></div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card product-card h-100">
+                        <span class="badge bg-danger position-absolute top-0 end-0 m-2">BESTSELLER</span>
+                        <img src="images/space-explorer.jpg" class="card-img-top product-img" alt="Space Explorer">
+                        <div class="card-body">
+                            <h5 class="card-title">Space Explorer</h5>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">650 pcs</span>
+                                <span class="badge bg-success">Age 8+</span>
+                            </div>
+                            <p class="card-text">$49.99</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <span class="ms-1">4.5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-success w-100 add-to-cart" data-id="1">
+                                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card product-card h-100">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2">NEW</span>
+                        <img src="images/medieval-castle.jpg" class="card-img-top product-img" alt="Medieval Castle">
+                        <div class="card-body">
+                            <h5 class="card-title">Medieval Castle</h5>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">1200 pcs</span>
+                                <span class="badge bg-success">Age 10+</span>
+                            </div>
+                            <p class="card-text">$89.99</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                    <span class="ms-1">4.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-success w-100 add-to-cart" data-id="2">
+                                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card product-card h-100">
+                        <img src="images/ocean-explorer.jpg" class="card-img-top product-img" alt="Ocean Explorer">
+                        <div class="card-body">
+                            <h5 class="card-title">Ocean Explorer</h5>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">450 pcs</span>
+                                <span class="badge bg-success">Age 7+</span>
+                            </div>
+                            <p class="card-text">$39.99</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span class="ms-1">5.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-success w-100 add-to-cart" data-id="3">
+                                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card product-card h-100">
+                        <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2">SALE</span>
+                        <img src="images/race-car.jpg" class="card-img-top product-img" alt="Race Car">
+                        <div class="card-body">
+                            <h5 class="card-title">Race Car</h5>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">320 pcs</span>
+                                <span class="badge bg-success">Age 6+</span>
+                            </div>
+                            <p class="card-text">
+                                <span class="text-danger"><del>$34.99</del></span> 
+                                <span class="fw-bold">$29.99</span>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                    <span class="ms-1">4.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-success w-100 add-to-cart" data-id="4">
+                                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card product-card h-100">
+                        <img src="images/dinosaur.jpg" class="card-img-top product-img" alt="Dinosaur">
+                        <div class="card-body">
+                            <h5 class="card-title">Dinosaur</h5>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">580 pcs</span>
+                                <span class="badge bg-success">Age 8+</span>
+                            </div>
+                            <p class="card-text">$54.99</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <span class="ms-1">4.5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-success w-100 add-to-cart" data-id="5">
+                                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card product-card h-100">
+                        <span class="badge bg-info position-absolute top-0 end-0 m-2">LIMITED</span>
+                        <img src="images/fire-station.jpg" class="card-img-top product-img" alt="Fire Station">
+                        <div class="card-body">
+                            <h5 class="card-title">Fire Station</h5>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">850 pcs</span>
+                                <span class="badge bg-success">Age 7+</span>
+                            </div>
+                            <p class="card-text">$69.99</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                    <span class="ms-1">4.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-success w-100 add-to-cart" data-id="6">
+                                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card product-card h-100">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2">POPULAR</span>
+                        <img src="images/pirate-ship.jpg" class="card-img-top product-img" alt="Pirate Ship">
+                        <div class="card-body">
+                            <h5 class="card-title">Pirate Ship</h5>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">720 pcs</span>
+                                <span class="badge bg-success">Age 9+</span>
+                            </div>
+                            <p class="card-text">$59.99</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span class="ms-1">5.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-success w-100 add-to-cart" data-id="7">
+                                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card product-card h-100">
+                        <img src="images/robot.jpg" class="card-img-top product-img" alt="Robot">
+                        <div class="card-body">
+                            <h5 class="card-title">Robot</h5>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="badge bg-primary">420 pcs</span>
+                                <span class="badge bg-success">Age 8+</span>
+                            </div>
+                            <p class="card-text">$44.99</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                    <span class="ms-1">4.0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-success w-100 add-to-cart" data-id="8">
+                                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">CAN'T FIND WHAT YOU'RE LOOKING FOR?</h2>
+            <p class="lead mb-5">We're constantly adding new sets to our collection</p>
+            <a href="contact.html" class="btn btn-light btn-lg px-4">
+                <i class="fas fa-envelope me-2"></i>Contact Us
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 brick-pattern-dark">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">
+                        <i class="fas fa-cubes me-2"></i>BRICKCRAFT
+                    </h4>
+                    <p>Building creativity one brick at a time since 2023.</p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-uppercase mb-4">Shop</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="products.html" class="text-white">All Products</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">New Arrivals</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Best Sellers</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Sale Items</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-uppercase mb-4">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html" class="text-white">Contact Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">FAQs</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Shipping</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-uppercase mb-4">Newsletter</h5>
+                    <p>Subscribe for exclusive offers and building ideas</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-warning" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <small class="text-muted">We'll never share your email with anyone else.</small>
+                </div>
+            </div>
+            <hr class="mt-5">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 BrickCraft. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Your custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
