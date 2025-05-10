@@ -9,8 +9,12 @@
 /* ====== Home page ====== */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     line-height: 1.6;
+}
+
+.banner-img{
+    width: 20vw;
 }
 
 a{
@@ -18,7 +22,6 @@ a{
 }
 
 .brand-text, .hero-title, .minifigure-heading {
-    font-family: 'Bungee', cursive;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -277,7 +280,6 @@ a{
     border-color: var(--primary-color);
 }
 
-/* Responsive Adjustments */
 @media (max-width: 992px) {
     .products-hero {
         min-height: 40vh;
@@ -656,3 +658,11 @@ a{
         padding: 1.5rem;
     }
 }
+
+/* Footer */
+
+footer{
+    border-top: 0.5em solid var(--accent-color);
+}
+
+/* Footer */
