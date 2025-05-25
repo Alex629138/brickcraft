@@ -299,7 +299,9 @@ a{
     .products-hero {
         min-height: 40vh;
     }
-    
+    .banner-img {
+        width: 50vw;
+    }
     .section-header {
         text-align: center;
     }
