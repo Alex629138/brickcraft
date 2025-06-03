@@ -63,16 +63,6 @@ a{
     z-index: 2;
 }
 
-.hero-bricks {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="40" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="20" fill="%23dd1d21"/><rect y="20" width="50" height="20" fill="%23dd1d21"/></svg>');
-    background-size: 100px 40px;
-    opacity: 0.7;
-}
 
 /* Section Headers */
 .section-header {
